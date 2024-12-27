@@ -4,31 +4,44 @@ https://github.com/acdlite/react-fiber-architecture
 
 
 ### These are the commands followed to create a React + Vite Project<br>
-npm create vite@latest<br>
-cd "ProjectName"<br>
-npm install -> This installs all the dependencies<br>
-npm run dev -> starts the project on localHost<br><br>
 
-
+```cmd
+npm create vite@latest 
+cd Project_name
+npm install
+npm run dev
+```
 ### If you want to use Tailwind in your project follow these
-npm install -D tailwindcss<br>
-npx tailwindcss init<br>
+
+
+```cmd
+npm install -D tailwindcss
+npx tailwindcss init
+```
 
 
 And update the tailwind.config.js file as follows-<br>
-/** @type {import('tailwindcss').Config} */<br>
 
-module.exports = {<br>
-  content: ["./src/**/*.{html,js}"],<br>
-  theme: {<br>
-    extend: {},<br>
-  },<br>
-  plugins: [],<br>
-}<br>
 
+``` css
+/** @type {import('tailwindcss').Config} */
+
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+
+```
 ### Now add these 3 lines in your main css file<br>
-@tailwind base;<br>
-@tailwind components;<br>
-@tailwind utilities;<br>
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
 ## Now you are ready to use Tailwind in your project just run npm run dev command :)
